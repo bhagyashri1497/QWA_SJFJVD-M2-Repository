@@ -1,4 +1,4 @@
-package MethodofWebElement;
+package Synchronization;
 
 import java.time.Duration;
 
