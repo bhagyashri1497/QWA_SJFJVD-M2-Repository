@@ -14,7 +14,7 @@ public class ActiTime {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-Random r=new Random();
+		Random r=new Random();
 		
 		int no = r.nextInt(1000);
 		
