@@ -1,15 +1,13 @@
+package WebdriverMethods;
 
 
 
-
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.WebDriver.Window;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class WorkingWithCloseMethod {
+public class WorkingWithGetPageSource {
 	public static void main(String[] args) {
 		
 		//to launch the browser
@@ -22,21 +20,11 @@ public class WorkingWithCloseMethod {
 		
 		
 		//to open the web application
-	//	driver.get("https://www.amazon.com/");
+		driver.get("https://www.amazon.com/");
 		
-		//to open the application
-		driver.get("https://omayo.blogspot.com/");
-		
-		//to click on new popup window
-		driver.findElement(By.xpath("//a[text()='Open a popup window']")).click();
-		
-	
-		//to close the browser
-		//driver.close();
-		
-		driver.quit();
-		
-		
+		//to fetch the source code
+		String sc=driver.getPageSource();
+		System.out.println(sc);
 		
 		
 		
@@ -45,7 +33,4 @@ public class WorkingWithCloseMethod {
 	}
 
 }
-
-
-
 

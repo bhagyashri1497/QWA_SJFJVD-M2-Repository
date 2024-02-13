@@ -20,10 +20,10 @@ public class WorkingWithGetCurrentUrl {
 		//to open the web application
 		driver.get("https://www.amazon.com/");
 		
-		//tpo fetch the current url
+		//to fetch the current url
 		String url=driver.getCurrentUrl();
 		
-		
+		System.out.println(url);
 		if(url.equals("https://www.amazon.com/"))
 				{
 					System.out.println("test case is pass");

@@ -1,3 +1,4 @@
+package WebdriverMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WorkingWithSwitchMethod {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		//to launch the browser
 		WebDriver driver= new ChromeDriver();
@@ -24,7 +25,7 @@ public class WorkingWithSwitchMethod {
 		//to open the application
 		driver.get("https://www.flipkart.com/");
 		
-
+		Thread.sleep(2000);
 		driver.switchTo().activeElement().sendKeys("poha",Keys.ENTER);
 		
 		
